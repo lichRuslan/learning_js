@@ -8,21 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./style/main.css" />
     <script src="./js/main.js"></script>
 </head>
-<body>
-    <form action="" method="POST" name="test" id="form">
-            <label for="email">Введите Email:</label>
-            <input type="text" name="email" placeholder="Email" id="email" /><br><br>
-        <label for="name">Введите имя:</label>
-        <input type="text" name="name" placeholder="Name" id="name" /><br><br>
-        <label for="password">Введите пароль:</label>
-        <input type="password" name="password" placeholder="password" id="password" /><br><br>
-        <label for="rePassword">Проверка пароля:</label>
-        <input type="password" name="rePassword" placeholder="rePassword" id="rePassword" /><br><br>
-
-        <span>Пол: </span>
-        <label for="state">М</label><input type="radio" name="state" id="man" /> |
-        <label for="state">Ж</label><input type="radio" name="state" id="woman" /> <br><br>
-        <input type="button" name="submit" onclick="valid(document.getElementById('form'))" value="Ок"  >
-    </form>
+<body onload="timer()">
+    Сукунд прошло : <span id="count">-1</span>
 </body>
 </html>
